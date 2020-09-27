@@ -29,7 +29,7 @@ class Artist
   end
 
   def print_songs
-    puts artist.songs
+    puts @songs
   end
 
 end

@@ -21,7 +21,7 @@ class Song
 
   def artist_name=(file)
     artist_name = (file.split(" - ")[0])
-    binding.pry
+    #binding.pry
 
     self.artist = artist_name
   end

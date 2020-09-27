@@ -17,7 +17,7 @@ class Song
     self.new(song[1])
   end
 
-  def artist_name
+  def artist_name=
     if self == self.new_by_filename
       self.artist = song[0]
     end

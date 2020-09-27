@@ -9,7 +9,7 @@ class Artist
     @songs = []
 
   def self.all
-    @@all 
+    @@all
   end
 
   def add_song

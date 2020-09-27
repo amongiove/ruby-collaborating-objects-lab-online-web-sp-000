@@ -10,7 +10,7 @@ class MP3Importer
   def files
     #binding.pry
     files = Dir.entries(@path)
-    files.remove(files.each {|file| file.include?("mp3") == false})
+    files.delete_if {|file| file.include?("mp3") == false}
 
     #delete if ^ is false
 

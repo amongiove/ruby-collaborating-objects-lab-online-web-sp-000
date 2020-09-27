@@ -23,7 +23,7 @@ class Song
     artist_name = Artist.find_or_create_by_name(file.split(" - ")[0])
     binding.pry
 
-    song.artist = artist_name
+    self.artist = artist_name
   end
 
 

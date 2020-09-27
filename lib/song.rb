@@ -18,8 +18,8 @@ class Song
   end
 
   def artist_name=(file)
-    artist = Artist.find_or_create_by_name(file.split(" - ")[0])
-    song.artist = artist
+    artist_name = Artist.find_or_create_by_name(file.split(" - ")[0])
+    song.artist = artist_name
   end
 
 

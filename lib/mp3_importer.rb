@@ -14,7 +14,7 @@ class MP3Importer
   end
 
   def import(file)
-    puts files.collect {|file| file.split(" - ").chomp(".mp3)")}
+    files.each {|file| Song.new(file)}
   end
 
 

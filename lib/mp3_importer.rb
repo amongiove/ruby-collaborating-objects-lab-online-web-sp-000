@@ -8,15 +8,13 @@ class MP3Importer
   end
 
   def files
-    #binding.pry
     files = Dir.entries(@path)
     files.delete_if {|file| file.include?("mp3") == false}
-
-    #delete if ^ is false
-
+    files
   end
 
   def import
+
   end
 
 

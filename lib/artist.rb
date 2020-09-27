@@ -25,6 +25,7 @@ class Artist
     if @@all.detect {|artist| artist.name == name}
       @@all.detect {|artist| artist.name == name}
     else self.new(name)
+    end
   end
 
   def print_songs

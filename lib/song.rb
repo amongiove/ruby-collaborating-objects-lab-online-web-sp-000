@@ -20,15 +20,11 @@ class Song
     song.artist = artist
     artist.add_song(song)
     song
-
-
   end
 
   def artist_name=(file)
     artist_name = (file.split(" - ")[0])
-    #binding.pry
-
-    self.artist = artist_name
+    song.artist = Artist.find_or_create_by_name(artist_name)
   end
 
 

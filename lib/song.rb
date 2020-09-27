@@ -22,9 +22,9 @@ class Song
     song
   end
 
-  def artist_name=(file)
+  def artist_name= (file)
     artist_name = (file.split(" - ")[0])
-    song.artist = Artist.find_or_create_by_name(artist_name)
+    self.artist = Artist.find_or_create_by_name(artist_name)
   end
 
 

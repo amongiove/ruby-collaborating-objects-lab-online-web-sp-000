@@ -20,6 +20,7 @@ class Song
   def artist_name=(file)
     artist_name = Artist.find_or_create_by_name(file.split(" - ")[0])
     song.artist = artist_name
+    binding.pry
   end
 
 
